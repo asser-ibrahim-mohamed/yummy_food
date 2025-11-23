@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+   <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../home images/image01.png" type="image/png">
+    <title>Yummy - Categories</title>
+</head>
+
+<body>
+    <nav id="sideNav" style="left: -250px;">
+        <div class="nav-tab">
+            <ul class="list-unstyled">
+                <!-- رابط الصفحة الرئيسية -->
+                <li class="py-2"><a href="index.html" class=" text-decoration-none">Home</a></li>
+                <li class="py-2"><a href="search.html" class=" text-decoration-none">search</a></li>
+
+                <!-- تم تصحيح هذا السطر: رابط ينقل لصفحة الأقسام بدلاً من دالة جافاسكريبت -->
+                <li class="py-2">
+                    <a href="categories.html" class="text-decoration-none">Categories</a>
+                </li>
+
+                <li class="py-2"><a href="Area.html" class=" text-decoration-none">Area</a></li>
+               <li class="py-2"><a href="ingredients.html" class=" text-decoration-none">Ingredients</a></li>
+                <li class="py-2"><a href="contact.html" class=" text-decoration-none">Contact Us</a></li></ul>
+
+            <div class="nav-footer">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f me-2"></i>
+                    <i class="fa-brands fa-twitter me-2"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="copyright mt-2">
+                    <p>Copyright © 2019 All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-header">
+            <div class="img-icon">
+                <a href="index.html">
+                   <img src="../home images/image01.png" alt="Logo" style="width: 50px;">
+                </a>
+            </div>
+
+            <div class="buttons">
+                <i id="toggleIcon" class="fa-solid fa-bars fa-2x cursor-pointer" onclick="toggleMenu()"></i>
+            </div>
+
+            <div class="icons d-flex flex-column gap-3">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row justify-content-start g-4" id="mealContainer">
+            <!-- سيتم عرض الأقسام هنا -->
+            <div class="text-center text-white">Loading Categories...</div>
+        </div>
+    </div>
+
+   <script src="../bootstrap/javascript/bootstrap.bundle.min.js"></script>
+
+    <script src="../js/categories.js"></script>
+</body>
+
+</html>
